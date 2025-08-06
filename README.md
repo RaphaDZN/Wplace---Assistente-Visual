@@ -30,7 +30,25 @@ Esta aplicação processa sua imagem, otimiza as cores e gera um guia interativo
 * **Minimapa Interativo:** Uma interface visual clara que mostra o progresso e destaca o próximo pixel a ser pintado.
 * **Navegação Rápida:** Um buscador de passos permite pular para qualquer ponto do seu projeto, ideal para desenhos grandes e pausas longas.
 * **Otimização de Fundo:** Opção para ignorar ou incluir pixels brancos, tratando-os como fundo ou como cor.
-* **100% Web:** Acesse de qualquer dispositivo com um navegador, em qualquer lugar. 
+* **100% Web:** Acesse de qualquer dispositivo com um navegador, em qualquer lugar.
+
+* ## 🎬 Demonstração em Ação
+
+Confira abaixo uma demonstração da ferramenta em uso:
+
+<p align="center">
+  <img src="https://i.ibb.co/8gpbZk4h/2025-08-06-11-04-55.gif" alt="Demonstração do Assistente Visual Wplace - Processamento">
+</p>
+
+Este GIF mostra o processo de upload da imagem e a geração do guia visual.
+
+<br>
+
+<p align="center">
+  <img src="https://i.ibb.co/pBGRTrkQ/2025-08-06-10-56-28.gif" alt="Demonstração do Assistente Visual Wplace - Desenho Lado a Lado">
+</p>
+
+Aqui, vemos a ferramenta sendo usada lado a lado com a tela de desenho do Wplace, mostrando a facilidade de seguir o guia.
 
 ## 🛠️ Tech Stack
 
