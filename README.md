@@ -38,14 +38,14 @@ Confira abaixo uma demonstração da ferramenta em uso:
 
 <p align="center">
   <em>(GIF 1: Processamento da imagem)</em><br>
-  <img src="https://i.ibb.co/8gpbZk4h/2025-08-06-11-04-55.gif" alt="Demonstração do Assistente Visual Wplace - Processamento">
+  <img src="[https://i.ibb.co/8gpbZk4h/2025-08-06-11-04-55.gif](https://github.com/RaphaDZN/Wplace---Assistente-Visual/blob/main/assets/Demonstra%C3%A7%C3%A3o%20Upload.gif)" alt="Demonstração do Assistente Visual Wplace - Processamento">
 </p>
 
 <br>
 
 <p align="center">
   <em>(GIF 2: Desenho lado a lado - Usando o mesmo GIF de 1MB para teste)</em><br>
-  <img src="https://i.ibb.co/8gpbZk4h/2025-08-06-11-04-55.gif" alt="Teste com o GIF mais leve">
+  <img src="https://github.com/RaphaDZN/Wplace---Assistente-Visual/blob/main/assets/Demonstra%C3%A7%C3%A3o%20Upload.gif" alt="Teste com o GIF mais leve">
 </p>
 
 ## 🛠️ Tech Stack
