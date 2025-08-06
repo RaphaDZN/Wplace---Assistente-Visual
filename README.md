@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.ibb.co/pBGRTrkQ/2025-08-06-10-56-28.gif" alt="Ilustração de um computador" width="400">
+  <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" width="400">
   <h1>🎨 Assistente Visual Wplace 🎨</h1>
   <p><strong>Transforme qualquer imagem em uma obra de arte pixelada, passo a passo.</strong></p>
 
