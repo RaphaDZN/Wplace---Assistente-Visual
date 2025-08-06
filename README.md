@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" alt="Ilustração de um computador" width="400">
+  <img src="https://i.ibb.co/pBGRTrkQ/2025-08-06-10-56-28.gif" alt="Ilustração de um computador" width="400">
   <h1>🎨 Assistente Visual Wplace 🎨</h1>
   <p><strong>Transforme qualquer imagem em uma obra de arte pixelada, passo a passo.</strong></p>
 
@@ -7,7 +7,7 @@
     <a href="https://wplace-assistente-visual.onrender.com/">
       <img src="https://img.shields.io/badge/Acessar_Aplicação-Online-brightgreen?style=for-the-badge&logo=rocket" alt="Acessar Aplicação">
     </a>
-    <a href="https://github.com/seu-usuario/seu-repositorio/blob/main/LICENSE">
+    <a href="https://github.com/RaphaDZN/Wplace---Assistente-Visual/blob/main/LICENSE">
       <img src="https://img.shields.io/badge/Licença-MIT-blue?style=for-the-badge" alt="Licença MIT">
     </a>
   </p>
@@ -30,7 +30,7 @@ Esta aplicação processa sua imagem, otimiza as cores e gera um guia interativo
 * **Minimapa Interativo:** Uma interface visual clara que mostra o progresso e destaca o próximo pixel a ser pintado.
 * **Navegação Rápida:** Um buscador de passos permite pular para qualquer ponto do seu projeto, ideal para desenhos grandes e pausas longas.
 * **Otimização de Fundo:** Opção para ignorar ou incluir pixels brancos, tratando-os como fundo ou como cor.
-* **100% Web:** Acesse de qualquer dispositivo com um navegador, em qualquer lugar.
+* **100% Web:** Acesse de qualquer dispositivo com um navegador, em qualquer lugar. 
 
 ## 🛠️ Tech Stack
 
