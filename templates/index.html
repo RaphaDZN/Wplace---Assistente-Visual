@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Assistente Wplace</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: auto; padding: 20px; background-color: #f4f4f4; }
+        h1 { text-align: center; color: #333; }
+        form { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        form > div { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        .coord-group { display: flex; gap: 10px; }
+        .checkbox-group { display: flex; align-items: center; gap: 10px; }
+        .checkbox-group input { width: auto; }
+        button { width: 100%; background-color: #3B9AD9; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 1.1em; }
+        button:hover { background-color: #2775A6; }
+    </style>
+</head>
+<body>
+    <h1>Assistente de Desenho Wplace (Versão Web)</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="image">1. Imagem:</label>
+            <input type="file" id="image" name="image" required>
+        </div>
+        <div>
+            <label for="size">2. Tamanho da Grade:</label>
+            <select id="size" name="size">
+                <option value="8x8">8x8</option>
+                <option value="16x16">16x16</option>
+                <option value="24x24">24x24</option>
+                <option value="32x32">32x32</option>
+                <option value="32x24">32x24 (Retangular)</option>
+                <option value="48x48">48x48</option>
+                <option value="64x32">64x32 (Retangular)</option>
+                <option value="64x64" selected>64x64</option>
+                <option value="128x64">128x64 (Retangular)</option>
+                <option value="128x128">128x128</option>
+            </select>
+        </div>
+        <div>
+            <label>3. Coordenada Central:</label>
+            <div class="coord-group">
+                <input type="number" name="coord_x" placeholder="Coordenada X" required>
+                <input type="number" name="coord_y" placeholder="Coordenada Y" required>
+            </div>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="include_white" name="include_white" value="true">
+            <label for="include_white">Incluir pixels brancos no desenho</label>
+        </div>
+        <button type="submit">Gerar Guia Visual</button>
+    </form>
+</body>
+</html>

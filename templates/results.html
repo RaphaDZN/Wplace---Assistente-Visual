@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia de Pixels Visual</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0; margin: 0; }
+        #container { display: flex; flex-wrap: wrap; gap: 30px; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.1); align-items: center; }
+        #minimap-container { text-align: center; }
+        #minimap-container h2 { margin-top: 0; }
+        #minimap-container img { max-width: 450px; max-height: 450px; border: 2px solid #333; image-rendering: pixelated; }
+        #controls { text-align: center; min-width: 300px; }
+        #current-instruction { margin-top: 20px; }
+        #coord-display { font-size: 2.5em; font-weight: bold; margin: 10px 0; color: #333; }
+        #color-display { display: flex; align-items: center; justify-content: center; gap: 10px; }
+        #color-swatch { width: 50px; height: 50px; border: 2px solid black; }
+        #color-code { font-size: 1.5em; color: #555; }
+        #nextBtn { font-size: 1.5em; font-weight: bold; padding: 15px 30px; cursor: pointer; background-color: #A5FF63; border: 2px solid #4A7F20; border-radius: 5px; margin-top: 20px; width: 100%; }
+        #nextBtn:disabled { background-color: #ccc; cursor: not-allowed; }
+        #progress { margin-top: 15px; font-size: 1.2em; color: #444; }
+        #step-jumper { margin-top: 20px; display: flex; gap: 10px; }
+        #step-jumper input { flex-grow: 1; text-align: center; font-size: 1em; }
+        #step-jumper button { font-size: 1em; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="minimap-container">
+            <h2>Minimapa</h2>
+            <img id="minimap" src="" alt="Minimapa do Desenho">
+        </div>
+        <div id="controls">
+            <h1>Próximo Passo</h1>
+            <div id="current-instruction">
+                <div id="coord-display">X: ..., Y: ...</div>
+                <div id="color-display">
+                    <div id="color-swatch"></div>
+                    <span id="color-code">#...</span>
+                </div>
+            </div>
+            <div id="progress"></div>
+            <div id="step-jumper">
+                <input type="number" id="step-input" placeholder="Nº do passo">
+                <button id="jump-btn">Pular para Passo</button>
+            </div>
+            <button id="nextBtn">PINTEI!</button>
+        </div>
+    </div>
+
+    <script>
+        const sessionId = {{ session_id | tojson }};
+        const instructions = {{ instructions | tojson }};
+        let currentStep = 0;
+        
+        const minimapImg = document.getElementById('minimap');
+        const coordDisplay = document.getElementById('coord-display');
+        const colorSwatch = document.getElementById('color-swatch');
+        const colorCode = document.getElementById('color-code');
+        const nextBtn = document.getElementById('nextBtn');
+        const progressEl = document.getElementById('progress');
+        const stepInput = document.getElementById('step-input');
+        const jumpBtn = document.getElementById('jump-btn');
+
+        function updateGuide() {
+            const totalSteps = instructions.length;
+            if (totalSteps === 0) {
+                coordDisplay.textContent = "Nada a fazer!";
+                nextBtn.disabled = true;
+                jumpBtn.disabled = true;
+                return;
+            }
+
+            if (currentStep < totalSteps) {
+                const inst = instructions[currentStep];
+                minimapImg.src = `/minimap/${sessionId}/${currentStep}.png?t=${new Date().getTime()}`;
+                coordDisplay.textContent = `X: ${inst.x}, Y: ${inst.y}`;
+                colorSwatch.style.backgroundColor = inst.color;
+                colorCode.textContent = inst.color;
+                progressEl.textContent = `Passo ${currentStep + 1} de ${totalSteps}`;
+                nextBtn.disabled = (currentStep >= totalSteps - 1);
+            } else {
+                currentStep = totalSteps;
+                coordDisplay.textContent = "FIM!";
+                colorSwatch.style.backgroundColor = 'transparent';
+                colorCode.textContent = "Desenho Concluído!";
+                nextBtn.disabled = true;
+                jumpBtn.disabled = true;
+                progressEl.textContent = `Total de ${totalSteps} pixels.`;
+            }
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentStep < instructions.length - 1) {
+                currentStep++;
+                updateGuide();
+            }
+        });
+
+        jumpBtn.addEventListener('click', () => {
+            const desiredStep = parseInt(stepInput.value, 10);
+            const totalSteps = instructions.length;
+            if (!isNaN(desiredStep) && desiredStep >= 1 && desiredStep <= totalSteps) {
+                currentStep = desiredStep - 1; 
+                updateGuide();
+            } else {
+                alert(`Por favor, insira um número de passo válido entre 1 e ${totalSteps}.`);
+            }
+        });
+
+        updateGuide();
+    </script>
+</body>
+</html>
