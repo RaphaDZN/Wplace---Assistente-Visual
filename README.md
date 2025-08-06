@@ -32,21 +32,21 @@ Esta aplicação processa sua imagem, otimiza as cores e gera um guia interativo
 * **Otimização de Fundo:** Opção para ignorar ou incluir pixels brancos, tratando-os como fundo ou como cor.
 * **100% Web:** Acesse de qualquer dispositivo com um navegador, em qualquer lugar.
 
-* ## 🎬 Demonstração em Ação
+## 🎬 Demonstração em Ação
+
+Confira abaixo uma demonstração da ferramenta em uso:
 
 <p align="center">
+  <em>(GIF 1: Processamento da imagem)</em><br>
   <img src="https://i.ibb.co/8gpbZk4h/2025-08-06-11-04-55.gif" alt="Demonstração do Assistente Visual Wplace - Processamento">
 </p>
-
-Este GIF mostra o processo de upload da imagem e a geração do guia visual.
 
 <br>
 
 <p align="center">
-  <img src="https://github.com/RaphaDZN/Wplace---Assistente-Visual/blob/main/assets/Demonstra%C3%A7%C3%A3o%20lado%20a%20lado.gif" alt="Demonstração do Assistente Visual Wplace - Desenho Lado a Lado">
+  <em>(GIF 2: Desenho lado a lado - Usando o mesmo GIF de 1MB para teste)</em><br>
+  <img src="https://i.ibb.co/8gpbZk4h/2025-08-06-11-04-55.gif" alt="Teste com o GIF mais leve">
 </p>
-
-Aqui, vemos a ferramenta sendo usada lado a lado com a tela de desenho do Wplace, mostrando a facilidade de seguir o guia.
 
 ## 🛠️ Tech Stack
 
