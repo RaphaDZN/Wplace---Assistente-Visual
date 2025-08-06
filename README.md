@@ -34,8 +34,6 @@ Esta aplicação processa sua imagem, otimiza as cores e gera um guia interativo
 
 * ## 🎬 Demonstração em Ação
 
-Confira abaixo uma demonstração da ferramenta em uso:
-
 <p align="center">
   <img src="https://i.ibb.co/8gpbZk4h/2025-08-06-11-04-55.gif" alt="Demonstração do Assistente Visual Wplace - Processamento">
 </p>
