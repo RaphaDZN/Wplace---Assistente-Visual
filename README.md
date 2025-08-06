@@ -45,7 +45,7 @@ Confira abaixo uma demonstração da ferramenta em uso:
 
 <p align="center">
   <em>(GIF 2: Desenho lado a lado - Usando o mesmo GIF de 1MB para teste)</em><br>
-  <img src="https://github.com/RaphaDZN/Wplace---Assistente-Visual/blob/main/assets/Demonstra%C3%A7%C3%A3o%20Upload.gif" alt="Teste com o GIF mais leve">
+  <img src=https://github.com/RaphaDZN/Wplace---Assistente-Visual/blob/main/assets/Demonstra%C3%A7%C3%A3o%20lado%20a%20lado.gif" alt="Teste com o GIF mais leve">
 </p>
 
 ## 🛠️ Tech Stack
