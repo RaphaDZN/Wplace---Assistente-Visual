@@ -43,7 +43,7 @@ Este GIF mostra o processo de upload da imagem e a geração do guia visual.
 <br>
 
 <p align="center">
-  <img src="https://i.ibb.co/pBGRTrkQ/2025-08-06-10-56-28.gif" alt="Demonstração do Assistente Visual Wplace - Desenho Lado a Lado">
+  <img src="https://github.com/RaphaDZN/Wplace---Assistente-Visual/blob/main/assets/Demonstra%C3%A7%C3%A3o%20lado%20a%20lado.gif" alt="Demonstração do Assistente Visual Wplace - Desenho Lado a Lado">
 </p>
 
 Aqui, vemos a ferramenta sendo usada lado a lado com a tela de desenho do Wplace, mostrando a facilidade de seguir o guia.
