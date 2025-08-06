@@ -4,7 +4,7 @@
   <p><strong>Transforme qualquer imagem em uma obra de arte pixelada, passo a passo.</strong></p>
 
   <p>
-    <a href="[LINK-PARA-SUA-APP-NO-RENDER.COM]">
+    <a href="https://wplace-assistente-visual.onrender.com/">
       <img src="https://img.shields.io/badge/Acessar_Aplicação-Online-brightgreen?style=for-the-badge&logo=rocket" alt="Acessar Aplicação">
     </a>
     <a href="https://github.com/seu-usuario/seu-repositorio/blob/main/LICENSE">
